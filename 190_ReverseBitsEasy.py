@@ -7,9 +7,9 @@ def reverseBits(self, n: int) -> int:
         n = [int(n[i]) for i in range(len(n))]
 
         s = 0
-        stepen_of_2 = 1
+        power_of_2 = 1
         for i in range(32):
-            s += stepen_of_2 * n[i]
-            stepen_of_2 *= 2
+            s += power_of_2 * n[i]
+            power_of_2 *= 2
             
         return s    
