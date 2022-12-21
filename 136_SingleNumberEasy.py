@@ -14,3 +14,11 @@ class Solution:
             if nums[i] != nums[i - 1]: 
                 return nums[i-1]
         return nums[-1]
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        """ time: O(n) extraspace: O(1) """
+        x = 0
+        for num in nums:
+            x ^= num
+        return x
