@@ -15,6 +15,7 @@ class Solution:
             s_i -= 1
         return s_i
     def backspaceCompare(self, s: str, t: str) -> bool:
+        """ time: O(n), extraspace: O(n) """
         t = "$" * (max(len(s), len(t)) - len(t) + 1) + t        
         s = "$" * (max(len(s), len(t)) - len(s) + 1) + s        
         
